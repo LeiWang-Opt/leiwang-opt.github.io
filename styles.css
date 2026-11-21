@@ -982,3 +982,17 @@ h2,h2 small,.bio-prose,.bio-prose strong,.section-intro,
     font-size: 11px;
   }
 }
+
+
+#education .phd-dissertation-title {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #272727;
+}
+
+@media (max-width: 540px) {
+  #education .phd-dissertation-title {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+}
