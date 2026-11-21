@@ -695,3 +695,160 @@ h2,h2 small,.bio-prose,.bio-prose strong,.section-intro,
   display:block; width:100%; height:100%; object-fit:cover;
   object-position:center 43%; flex:none;
 }
+
+/* =========================================
+   Profile links: Google Scholar, ORCID,
+   GitHub, Email
+   ========================================= */
+
+.profile-links .scholar-icon,
+.profile-links .github-icon {
+  background: #e9f2fc;
+  color: #2e68a4;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: initial;
+}
+
+
+/* =========================================
+   About Me: Find My CV button
+   ========================================= */
+
+#about .cv-action-row {
+  margin-top: 24px;
+}
+
+#about .cv-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 17px;
+  min-height: 43px;
+
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--accent);
+
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.3;
+  font-weight: 650;
+  letter-spacing: .01em;
+  text-decoration: none;
+
+  transition:
+    background-color .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+#about .cv-outline-button svg {
+  flex: 0 0 17px;
+}
+
+#about .cv-outline-button:hover {
+  background: var(--accent-faint);
+  color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+#about .cv-outline-button:focus-visible {
+  outline: 3px solid #9bbfea;
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   Contact: Email button
+   ========================================= */
+
+#contact .contact-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  max-width: 100%;
+  min-height: 43px;
+  padding: 10px 17px;
+
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--accent);
+
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.3;
+  font-weight: 650;
+  letter-spacing: .01em;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+
+  transition:
+    background-color .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+#contact .contact-outline-button svg {
+  flex: 0 0 17px;
+}
+
+#contact .contact-outline-button:hover {
+  background: var(--accent-faint);
+  color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+#contact .contact-outline-button:focus-visible {
+  outline: 3px solid #9bbfea;
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   Responsive adjustments for mobile
+   ========================================= */
+
+@media (max-width: 540px) {
+
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+  }
+
+  .profile-links a {
+    min-width: 0;
+    flex: 0 0 auto;
+    min-height: 34px;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .profile-links .link-icon {
+    width: 23px;
+    height: 23px;
+    flex: 0 0 23px;
+  }
+
+  .profile-links .link-arrow {
+    display: none;
+  }
+
+  #about .cv-action-row {
+    margin-top: 21px;
+  }
+
+  #contact .contact-outline-button {
+    padding: 10px 12px;
+    gap: 8px;
+    font-size: 12.5px;
+  }
+
+}
