@@ -559,7 +559,7 @@ h2,h2 small,.bio-prose,.bio-prose strong,.section-intro,
 #publications .pub-item h4 .paper-title:visited {color:var(--accent);}
 #publications .pub-item h4 .paper-title:hover {color:var(--accent-dark);}
 #publications .pub-item .authors {font-size:14px;line-height:1.68;color:#171717;margin-bottom:4px;}
-#publications .pub-item .authors strong {color:#171717;font-weight:650;}
+#publications .pub-item .authors strong {color:#171717;font-weight:600;}
 #publications .pub-item .venue {font-size:13.5px;line-height:1.65;color:#333;}
 #publications .pub-index {font-size:12px;padding-top:5px;color:#383838;}
 #publications .pub-links {gap:8px;margin-top:11px;}
