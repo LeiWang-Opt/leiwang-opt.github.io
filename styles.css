@@ -911,3 +911,74 @@ h2,h2 small,.bio-prose,.bio-prose strong,.section-intro,
     font-size: 12.5px;
   }
 }
+
+/* =========================================
+   Ph.D. Dissertation in Education
+   ========================================= */
+
+#education .phd-dissertation {
+  margin-top: 13px;
+  padding-left: 12px;
+  border-left: 2px solid #d9e7f7;
+}
+
+#education .phd-dissertation-title {
+  margin: 0 0 8px;
+  color: #202020;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+#education .phd-dissertation-title strong {
+  color: #202020;
+  font-weight: 650;
+}
+
+#education .phd-dissertation-language {
+  color: #555;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#education .phd-dissertation-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#education .phd-dissertation-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid #cbd9e8;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 11.6px;
+  line-height: 1.45;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+#education .phd-dissertation-links a:hover {
+  background: #edf4fc;
+  border-color: #83abd5;
+}
+
+/* Mobile */
+@media (max-width: 540px) {
+  #education .phd-dissertation {
+    margin-top: 11px;
+    padding-left: 10px;
+  }
+
+  #education .phd-dissertation-title {
+    font-size: 12.5px;
+  }
+
+  #education .phd-dissertation-links a {
+    font-size: 11px;
+  }
+}
